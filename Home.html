@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="Home.css">
 </head>
@@ -11,25 +12,23 @@
     
     <!-- # Structure
             # Navigation
-            # Right
-            # Center [main]
-            # Left     -->
+            #center
+                #left
+                #    -->
 
     <!-- ------------#Navigation--------------->
     <div id="Navigation">
 
         <!-- --------------------# left side #------------------- -->
         <div id="Navigation-left">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
+            <div id="Logo"></div>
         </div>
-
-        <!-- ---------------------# middle logo #-------------------- -->
-        <div id="Logo"></div>
-
         <!-- --------------------# right side #------------------- -->
         <div id="Navigation-right">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
             <a href="#">Collab</a>
+            <a href="#">Popular</a>
             <a href="#">Sign up</a>
         </div>
 
@@ -37,9 +36,61 @@
 
     <!-- -----------------#Center--------------- -->
     <div id="Center">
+        <!-- -----------------#Center-left--------------- -->
+        <div id="Center-left">
+            <div id="search-box">
+                <div id="cover">
+                    <i class="ri-search-2-line"></i>
+                    <input type="text" placeholder= "search">
+                </div>
+            </div>
+            <div id="category-box">
+                <div id="state-vise" class="category-div">
+                    <h4>State :</h4>
+                    <form action="#">
+                        <select name="state" id="state">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </div>
+                <div id="univercity-vise" class="category-div">
+                    <h4>Collage :</h4>
+                    <form action="#">
+                        <select name="univercity" id="univercity">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </div>
+                <div id="domain-vise" class="category-div">
+                    <h4>Domain :</h4>
+                    <form action="#">
+                        <select name="domain" id="domain">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </div>
+                <div id="difficult-vise" class="category-div">
+                    <h4>Level :</h4>
+                    <form action="#">
+                        <select name="difficult" id="difficult">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </div>
+                <div id="language-vise" class="category-div">
+                    <h4>Language :</h4>
+                    <form action="#">
+                        <select name="language" id="language">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------#Main--------------------- -->
+        <div id="Main"></div>
         <!-- -----------------#Center-right--------------- -->
-
-
+        <div id="Center-right"></div>
     </div>
 
 
