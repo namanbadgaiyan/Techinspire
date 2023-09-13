@@ -2,14 +2,17 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: gilroy;
 }
 html, body{
-
+    width: 100%;
+    height: 100%;
 }
 #main{
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: #FCF5FF;
 }
 #left{
     height: 100%;
@@ -19,95 +22,121 @@ html, body{
 #right{
     height: 100%;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #right #box{
     height: 70%;
     width: 70%;
     background-color: rgb(220, 173, 173);
-    margin-top: 15%;
-    margin-left: 15%;
+    display: flex;
+    gap: 2vh;
+    padding: 3vh;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* margin-top: 15%; */
+    /* margin-left: 15%; */
 }
 #box h4{
     text-align: center;
-    padding-top: 7%;
+    font-size: 3vh;
+    font-weight: 900;
+    /* padding-top: 7%; */
 }
 #box h1{
-    font-size: 35px;
-    font-family: monospace;
-    font-weight: 500;
-    font-style: normal;
+    font-size: 4.5vh;
+    /* font-family: monospace; */
+    font-weight: 600;
+    /* font-style: normal; */
     text-align: center;
-    padding-top: 2%;
+    /* padding-top: 2%; */
+    margin-bottom: 3vh;
 }
 #box input{
     border-color: black;
     border-width: thin;
-    border-radius: 40px;
-    height: 30px;
-    width: 220px;
-    padding-left: 8px;
-    margin-left: 27%;
-    margin-top: 4%;
+    border-radius: 2vh;
+    height: 5vh;
+    width: 20vw;
+    padding: 2vh 2vh;
+    font-size: 1.8vh;
+    /* margin-left: 27%; */
+    /* margin-top: 4%; */
     outline: none;
 }
 #box .submit{
     background-color: rgb(15, 15, 15);
-    font-family: inherit;
-    padding: 6px 96px;
+    /* font-family: inherit; */
+    padding: 2vh 8vw;
     border: transparent;
-    margin-top: 5%;
-    margin-left: 27%;
-    color: white;
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: medium;
-    cursor: pointer;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    /* margin-left: 27%; */
+    color: #FCF5FF;
+    border-radius: 2.5vh;
+    font-weight: 600;
+    font-size: 1.8vh;
 }
 #box .submit:hover{
     background-color: rgb(33, 33, 33);
+    cursor: cell;
 }
 #box .button{
-    background-color: white;
-    font-family: inherit;
-    padding: 5px 56px;
+    background-color: #FCF5FF;
+    /* font-family: inherit; */
+    padding: 2vh 5.3vw;
     border: transparent;
-    margin-top: 4%;
-    margin-left: 27%;
-    color: black;
-    border-radius: 40px;
-    font-weight: 500;
-    font-size: medium;
+    /* margin-top: 4%; */
+    /* margin-left: 27%; */
+    color: rgb(5, 5, 5);
+    border-radius: 2.5vh;
+    font-weight: 600;
+    font-size: 1.8vh;
 }
 #box .button:hover{
     background-color: rgb(237, 226, 226);
-    cursor: pointer;
+    cursor: cell;
 }
 #text{
     display: flex;
+    margin-top: 5vh;
     gap: 4px;
 }
 #text .text{
-    font-size: medium;
-    font-weight: 200;
+    font-size: 1.8vh;
+    font-weight: 300;
+    /* margin-top: 5vh; */
     color: black;
-    margin-top: 10%;
-    margin-left: 29%;
 }
 #text .type{
-    font-size: medium;
-    font-weight: 200;
+    font-size: 1.8vh;
+    font-weight: 300;
     color: rgb(52, 52, 174);
-    margin-top: 10%;
-    cursor: pointer;
+    /* margin-top: 5vh; */
+    cursor: cell;
+    text-decoration: none;
 }
 #text .type:hover{
     text-decoration: underline;
 }
 #box #icons{
     display: flex;
-    margin-top: 7%;
-    margin-left: 42%;
+    /* margin-top: 7%; */
+    /* margin-left: 42%; */
     gap: 15px;
 }
-
-
+#box #icons h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#box #icons h2:hover{
+    background-color: #000;
+    color: #FCF5FF;
+}
